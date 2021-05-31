@@ -1,0 +1,264 @@
+body {
+   width: 100%;
+   border: solid;
+}
+
+/* Grid Container*/
+.grid {
+   margin: 0 auto;
+   display: grid;
+   max-width: 90%;
+   margin: 0 auto;
+   border: 1px solid #ccc;
+}
+
+.grid-template-areas-1 {
+   grid-template-areas:
+      "logo nav nav nav "
+      "content content content aside"
+      "footer footer footer footer"
+   ;
+}
+
+/* GRID AREAS */
+.logo {
+   grid-area: logo;
+}
+
+.nav {
+   grid-area: nav;
+}
+
+.content {
+   grid-area: content;
+}
+
+.sidenav {
+   grid-area: sidenav;
+}
+
+.aside {
+   grid-area: aside;
+}
+
+.footer {
+   grid-area: footer;
+}
+
+
+/* Grid ITEM */
+.item {
+   margin: 5px;
+   /* background: tomato; */
+   text-align: center;
+   font-size: 1.5em;
+}
+
+/* LOGO */
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: solid;
+}
+
+.logo>a>img {
+   height: 100px;
+}
+
+/* Menu  */
+nav {
+   height: 150px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+   border: solid;
+}
+
+nav>ul {
+   display: flex;
+}
+
+nav>ul>li {
+   list-style: none;
+   text-decoration: none;
+   display: flex;
+   height: 40px;
+}
+
+nav>ul>li>a {
+   padding: 10px 10px;
+   margin: 0px 10px;
+   color: white;
+   background-color: tomato;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   border: black solid;
+   border-radius: 5px;
+}
+
+nav>ul>li>a:hover {
+   background-color: black;
+   border: tomato solid;
+   color: tomato;
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   padding: 10px 10px;
+   margin: 0px 10px;
+   font-size: 15px;
+   border-radius: 5px;
+}
+
+/* MAIN CONTENT */
+.content {
+   height: 340px;
+}
+
+.sect1 {
+   border: solid;
+   height: 200px;
+}
+
+.sect2 {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   border: solid;
+   margin: 5px 0px;
+}
+
+.serv {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   background-color: tomato;
+   border: solid;
+   margin: 5px 0px;
+}
+
+.serv>a {
+   color: white;
+   text-decoration: none;
+   border-radius: 10px;
+   padding: 20px 0px;
+}
+
+.serv:hover {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   background-color: black;
+   border: solid tomato;
+   color: tomato;
+   margin: 5px 0px;
+}
+
+.serv>a:hover {
+   color: tomato;
+   text-decoration: none;
+   border-radius: 10px;
+   padding: 20px 0px;
+}
+
+/* ASIDE */
+.aside {
+   border: solid;
+}
+
+/* FOOTER */
+.footer {
+   height: 60px;
+   border: solid;
+}
+
+@media only screen and (max-width: 600px) {
+
+   /* CONTAINER CONFIGURATION */
+   body {
+      width: 95%;
+      /* min-width: 300px; */
+   }
+
+   /* Grid Container*/
+   .grid {
+      margin: 0 auto;
+      display: grid;
+      max-width: 100%;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+   }
+
+   .grid-template-areas-1 {
+      grid-template-areas:
+         "logo logo logo logo "
+         "content content content content"
+         "aside aside aside aside"
+         "footer footer footer footer"
+      ;
+   }
+
+   /* ========================  */
+
+   /* Grid Item */
+   .item {
+      margin: 5px;
+      background: tomato;
+      font-size: 14px;
+   }
+
+   /* LOGO */
+   .logo {
+      display: flex;
+      justify-content: center;
+   }
+
+   img {
+      height: 50px;
+   }
+
+   /* MENU SOME  */
+   nav {
+      display: none;
+   }
+
+   .sect2{
+      height: 125px;
+   }
+   .serv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      border: solid;
+      margin: 5px 0px;
+   }
+   .serv:hover{
+      border: solid white;
+   }
+
+   .serv>a {
+      font-family: Arial, Helvetica, sans-serif;
+      color: tomato;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 20px 0px;
+   }
+
+   .serv>a:hover {
+      font-family: Arial, Helvetica, sans-serif;
+      color: tomato;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 20px 0px;
+   }
+}
