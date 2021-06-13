@@ -1,10 +1,10 @@
 //declarando variável
-var texto = "Olá Mundo!";
+//var texto = "Olá Mundo!";
 
 //exibindo-a no alerta
-alert(texto);
+//alert(texto);
 
-function aoClicar() {
+/*function aoClicar() {
    //exibindo-a no alerta
    alert(texto);
-}
+}*/
